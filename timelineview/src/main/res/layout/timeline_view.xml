@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="labelColor"
+            type="int" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        tools:context=".ui.main.timeline.TimelineFragment">
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="8dp"
+            android:background="@{labelColor}"
+            app:layout_constraintBottom_toBottomOf="@+id/timeline_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/timeline_label"
+            app:layout_constraintTop_toTopOf="@+id/timeline_label"
+            tools:background="#5C5C5C" />
+
+        <TextView
+            android:id="@+id/timeline_label"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:gravity="end"
+            android:textAlignment="textEnd"
+            android:textColor="@{labelColor}"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="12 PM"
+            tools:textColor="#5C5C5C" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

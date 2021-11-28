@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        tools:context=".TimelineFragment">
+
+        <com.akribase.timelineview.TimelineView
+            android:id="@+id/timeline_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            app:startLabel="9"
+            app:backgroundColor="@color/colorBackground"
+            app:eventBackground="@color/primaryPurple"
+            app:labelColor="@color/lightGrey"
+            app:eventNameColor="@color/colorOnPrimary"
+            app:eventTimeColor="@color/colorOnPrimaryLight" />
+
+    </ScrollView>
+</layout>
