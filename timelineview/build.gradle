@@ -3,6 +3,30 @@ plugins {
     id 'kotlin-android'
 }
 
+ext {
+    PUBLISH_GROUP_ID = 'io.github.akri16'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_ARTIFACT_ID = 'timelineview'
+    PUBLISH_DESCRIPTION = 'Event Timeline Calendar View like Google Calendar'
+    PUBLISH_URL = 'https://github.com/akri16/TimelineView'
+    PUBLISH_LICENSE_NAME = 'Apache 2.0 License'
+    PUBLISH_LICENSE_URL =
+            'https://github.com/akri16/TimelineView/blob/main/LICENSE'
+    PUBLISH_DEVELOPER_ID = 'akri16'
+    PUBLISH_DEVELOPER_NAME = 'Amit Krishna A'
+    PUBLISH_DEVELOPER_EMAIL = 'amit.ananthkumar@gmail.com'
+    PUBLISH_SCM_CONNECTION =
+            'scm:git:github.com/akri16/BoxieField.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION =
+            'https://github.com/akri16/TimelineView.git'
+    PUBLISH_SCM_URL =
+            'https://github.com/akri16/TimelineView/tree/main'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
+
+
+
 android {
     compileSdk 31
 
