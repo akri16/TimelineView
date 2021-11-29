@@ -1,17 +1,22 @@
 # TimelineView
 A TimelineView that will help you create event timelines in apps just like the Google Calendar DayView 
 
-[![Maven](https://img.shields.io/maven-central/v/io.github.akri16/boxiefieldlibrary)](https://search.maven.org/artifact/io.github.akri16/boxiefieldlibrary/1.0.0/aar)
+[![Maven](https://img.shields.io/maven-central/v/io.github.akri16/timelineview)](https://search.maven.org/artifact/io.github.akri16/timelineview/1.0.0/aar)
 
-A library that allows you to create a set of boxed EditTexts that are managed for cursor movement, enabling, tint, text addition and deletion, and text change notification. 
+A library that allows you to create a timeline view just like the Google Calendar Day View for events. The UI offers a lot of color and structure customizations.
+<p align="center">
+  <img alt="Screenshot" src="https://github.com/akri16/TimelineView/blob/main/art/demo.gif" width="200" />
+</p>
 
-<p align="center"><img alt="Screenshot" src="https://github.com/akri16/BoxieField/blob/main/assets/1.png" width="200" center/></p>
 
 ## Motivation
+<div>
+<img align="right" alt="Screenshot" src="https://github.com/akri16/TimelineView/blob/main/art/google-calendar-dayview.jpg" width="200"/>
+You can find a view like this in the official Calendar app by Google. This kind of duration based height adjustment is difficult to implement natively without the use of a Custom View. This library does all the heavy work for you and provides a clean API to tweak the settings easily using both xml atributes as well as through code.
 
-Almost every commercial app has a login screen followed by OTP verification. Modern OTP verification layouts use split EditTexts like the BoxedEditText in this library. These EditText have o be made using multiple EditTexts of unit length. This clutters up the XML file and makes the process of designing a simple authentication screen cumbersome. To add to this, making it smoothly function when moving cursor from one box to the next, adding and removing text and attaching callbacks for text changes require lots of code. 
+</div>
 
-With this library all of this is managed internally. You will get a fully functional, standard and customizable BoxedEditText in just two simple steps.
+<br> <br> <br><br><br> <br> <br><br><br> <br> 
 
 ## Download
 
