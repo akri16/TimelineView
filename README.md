@@ -44,6 +44,10 @@ dependencies {
             app:eventTimeColor="@color/colorOnPrimaryLight" />
 ```
 
+## Contributing
+
+Refer to [CONTRIBUTING.md](https://github.com/akri16/TimelineView/blob/main/CONTRIBUTING.md) for details
+
 ## License
 
      Apache License
